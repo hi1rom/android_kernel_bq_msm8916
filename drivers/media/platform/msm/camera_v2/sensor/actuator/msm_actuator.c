@@ -485,13 +485,13 @@ static int32_t msm_actuator_move_focus(
 		dest_step_pos);
 		return -EFAULT;
 	}
-/* drv: thomasyang add [L8910] T10 monkey test system crash*/
+/*longcheer drv: thomasyang add [L8910] T10 monkey test system crash*/
 	if (a_ctrl->step_position_table == NULL) {
 		pr_err("%s:Step position table is not initialed %d \n"
 				,__func__, __LINE__);
 		return -EFAULT;
 	}
-/* drv: thomasyang add end*/
+/*longcheer drv: thomasyang add end*/
 
 	curr_lens_pos = a_ctrl->step_position_table[a_ctrl->curr_step_pos];
 	a_ctrl->i2c_tbl_index = 0;
